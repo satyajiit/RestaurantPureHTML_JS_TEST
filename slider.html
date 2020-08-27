@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <title>Xenon Restaurants Inc 2020</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/food.png">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Welcome</a></li>
+                <li><a href="/book.html">Book Hotel</a></li>
+                <li class="active"><a href="/slider.html">Watch Our Videos</a></li>
+                <li><a href="/greatest.html">Find Greatest</a></li>
+                <li><a href="/ques.html">Code Challenge</a></li>
+                <li><a href="https://satyajiit.xyz" target="_blank">About Dev</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="contentData">
+
+        <div class="card" style="background:#F9F9F9;  width: 50%; height: 50%; padding: 15px;">
+
+            <div>
+                <iframe width="100%" class="mySlides" height="100%"
+                    src="https://www.youtube.com/embed/CoAvaYOwm6k?autoplay=0" frameborder="0">
+                </iframe>
+                <iframe width="100%" class="mySlides" height="100%"
+                src="https://www.youtube.com/embed/YLRn-tB-_lI?autoplay=0" frameborder="0">
+            </iframe>
+            <iframe width="100%" class="mySlides" height="100%"
+            src="https://www.youtube.com/embed/qBiiYfuOfsU?autoplay=0" frameborder="0">
+        </iframe>
+                <iframe width="100%" class="mySlides" height="100%"
+                src="https://www.youtube.com/embed/5oPVcjCFTbU?autoplay=0" frameborder="0">
+            </iframe>
+
+                <button style="margin-top: 4px;" class="navBtns" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="navBtns" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+</body>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+</html>

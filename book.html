@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="/style.css">
+    <title>Xenon Restaurants Inc 2020</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/food.png">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Welcome</a></li>
+                <li class="active"><a href="/book.html">Book Hotel</a></li>
+                <li><a href="/slider.html">Watch Our Videos</a></li>
+                <li><a href="/greatest.html">Find Greatest</a></li>
+                <li><a href="/ques.html">Code Challenge</a></li>
+                <li><a href="https://satyajiit.xyz" target="_blank">About Dev</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="contentData">
+
+        <div class="card" style="background:#F9F9F9;  width: 100%;">
+
+            <form id="book-hotel">
+                <h3 style="float: left; margin: 120px 0 10px 0;">Book Hotel</h3>
+                <fieldset>
+                    <select id="title">
+                        <option value="0">Select Title</option>
+                        <option value="1">Mr.</option>
+                        <option value="2">Mrs.</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <input id="name" placeholder="Full name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input id="number" placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <input id="addr" placeholder="Address" type="text" tabindex="4" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input id="town" placeholder="Town" type="text" tabindex="5" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input id="city" placeholder="City" type="text" tabindex="6" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input id="people" placeholder="Number of People" type="number" tabindex="7" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input id="rooms" placeholder="Number of Rooms" type="number" tabindex="8" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input id="time" placeholder="Arrival Date & Time" type="text" tabindex="9" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <fieldset>
+                        <select id="occupancy">
+                            <option value="0">Select Occupancy</option>
+                            <option value="1">Single</option>
+                            <option value="2">Twin</option>
+                            <option value="3">Double</option>
+                        </select>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <textarea id="info" placeholder="Additional Information...." tabindex="10" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="book-submit">Submit</button>
+                </fieldset>
+
+                <div id="responseDiv" class="fontText" style="display: none;"></div>
+            </form>
+
+
+        
+        </div>
+
+    </section>
+
+</body>
+
+<script type="text/javascript" src="/scripts/validate.js"></script>
+</html>

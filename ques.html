@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="/style.css">
+    <title>Xenon Restaurants Inc 2020</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/food.png">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Welcome</a></li>
+                <li><a href="/book.html">Book Hotel</a></li>
+                <li><a href="/slider.html">Watch Our Videos</a></li>
+                <li><a href="/greatest.html">Find Greatest</a></li>
+                <li class="active"><a href="/ques.html">Code Challenge</a></li>
+                <li><a href="https://satyajiit.xyz" target="_blank">About Dev</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="contentData">
+
+        <div class="card" style="background:#F9F9F9;  width: 50%;">
+
+            <div class="contentBody">
+                <h4 style="float: left; margin: 0px 0 10px 0; text-align: left;">Q. When the user hovers the cursor over
+                    the image, a function is triggered that enlarges the size of the
+                    image.</h4>
+
+                <img src="/images/food.png" alt="ICON" id="imageTest" onmouseover="enlargeIcon();"
+                    onmouseout="normaliseIcon();" height="80px" width="80px">
+
+                <h6 style="float: left; margin: 0px 0 10px 0; text-align: left; margin-top: 16px;">Try hovering over the
+                    image, it is using two attributes onmouseover and onmouseout,<br>which calls enlargeIcon() and
+                    normaliseIcon() functions respectively!</h6>
+                <button style="margin-top: 16px;" onclick="viewCode()" id="submitBtn">View Code</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="solutionCard" style="background:#F9F9F9;  width: 50%; margin-top: 16px; display: none;">
+
+            <div class="contentBody">
+                <h4 style="float: left; margin: 0px 0 10px 0; text-align: left;">HTML</h4>
+
+                <fieldset>
+                    <textarea id="htmlCode" class="codeSpace" fixed></textarea>
+                </fieldset>
+
+                <h4 style="float: left; margin: 0px 0 10px 0; text-align: left;">Javascript</h4>
+
+                <fieldset>
+                    <textarea id="jsCode" class="codeSpace" fixed></textarea>
+                </fieldset>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+<script type="text/javascript" src="/scripts/enlarge.js"></script>
+
+</html>

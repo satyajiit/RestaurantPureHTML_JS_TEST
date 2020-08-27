@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+html {
+  font-family: Poppins;
+  font-size: 16px;
+  background: #00796b;
+}
+body {
+    margin: auto;
+}
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: #004d40;
+  font-size: 0.65em;
+}
+
+.nav {
+  position: relative;
+  margin: 0 15%;
+  text-align: right;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  position: relative;
+  margin: 3.2em 0;
+}
+.nav ul li a {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.35);
+  display: block;
+  -webkit-transition: all ease-out 300ms;
+  transition: all ease-out 300ms;
+}
+.nav ul li.active a {
+  color: white;
+}
+.nav ul li:not(.active)::after {
+  opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.nav ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #00897b, #fb8c00);
+}
+
+.mainData {
+  position: relative;
+  width: 75%;
+  float: right;
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainData .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.mainData a {
+  position: relative;
+}
+
+.mainData p {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #FFF;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .centeredContent {
+    top: 50%; 
+     margin: 0; 
+     transform: translateY(-50%); 
+       -ms-transform: translateY(-50%); 
+       position: relative;  
+       text-align: center;
+  }
+
+  .contentData {
+    position: relative;
+    width: 75%;
+    float: right;
+    height: 100vh;
+    display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100%;
+  text-align: center;
+  }
+
+  .imageEnlarge:hover{
+    transform: scale(1.2);
+  }
+
+
+  /* ADD REST FORM */
+
+  #book-hotel input[type="text"]:hover, #book-hotel input[type="email"]:hover, #book-hotel input[type="tel"]:hover, #book-hotel input[type="url"]:hover, #book-hotel textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#book-hotel input[type="text"], #book-hotel input[type="email"], #book-hotel input[type="tel"],#book-hotel input[type="number"], #book-hotel input[type="url"], #book-hotel textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+    padding:10px;
+    font-family: Poppins;
+}
+
+select {
+    width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+    padding:10px;
+    font-family: Poppins;
+    -webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#book-hotel textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#book-hotel button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#00796b;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+    font-size:15px;
+    font-family: Poppins;
+}
+
+#book-hotel button[type="submit"]:hover {
+	background:#004d40;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+    font-family: Poppins;
+}
+
+#book-hotel button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);   }
+
+#book-hotel input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#book-hotel {
+    padding-left: 20px;
+    padding-right: 20px;
+	margin:50px 0;
+}
+
+#book-hotel h3 {
+	color: #004d40;
+	display: block;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+
+.fontText{
+
+    color: #004d40;
+    float: left;
+
+}
+
+/* SLIDER PAGE */
+.navBtns{
+
+	cursor:pointer;
+	border:none;
+	background:#fb8c00;
+	color:#FFF;
+    font-size:15px;
+    font-family: Poppins;
+
+}
+
+
+.navBtns:hover {
+	background:#e65100;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+    font-family: Poppins;
+}
+
+
+
+/* Code Challenge */
+.contentBody {
+  padding-left: 20px;
+  padding-right: 20px;
+margin: 20px 0 20px 0;
+}
+
+
+.contentBody button {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#00796b;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+    font-size:15px;
+    font-family: Poppins;
+}
+
+.contentBody button:hover {
+	background:#004d40;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+    font-family: Poppins;
+}
+
+.contentBody button:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);   }
+
+.codeSpace{
+
+  width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+    padding:10px;
+    font-family: Poppins;
+    height:100px;
+	max-width:100%;
+  resize:none;
+
+}
+.codeSpace:hover{
+-webkit-transition:border-color 0.3s ease-in-out;
+-moz-transition:border-color 0.3s ease-in-out;
+transition:border-color 0.3s ease-in-out;
+border:1px solid #AAA;
+}

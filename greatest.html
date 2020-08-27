@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="/style.css">
+    <title>Xenon Restaurants Inc 2020</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/food.png">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Welcome</a></li>
+                <li><a href="/book.html">Book Hotel</a></li>
+                <li><a href="/slider.html">Watch Our Videos</a></li>
+                <li  class="active"><a href="/greatest.html">Find Greatest</a></li>
+                <li><a href="/ques.html">Code Challenge</a></li>
+                <li><a href="https://satyajiit.xyz" target="_blank">About Dev</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="contentData">
+
+        <div class="card" style="background:#F9F9F9;  width: 50%;">
+
+            <form id="book-hotel">
+                <h3 style="float: left; margin: 0px 0 10px 0;">Find Greatest of three</h3>
+                <fieldset>
+                    <input id="one" placeholder="First Number" type="number" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input id="two" placeholder="Second Number" type="number" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input id="three" placeholder="Third Number" type="number" tabindex="3" required>
+                </fieldset>
+               
+               
+                    <button name="submit" type="submit">Find out</button>
+                </fieldset>
+
+                <div id="responseDiv" class="fontText" style="display: none;"></div>
+            </form>
+
+
+        
+        </div>
+
+    </section>
+
+</body>
+
+<script type="text/javascript" src="/scripts/calcMax.js"></script>
+</html>
